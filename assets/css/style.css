@@ -3,4 +3,49 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    text-align: left;
+    margin-top: 50px; /* Adjust margin as needed */
+    
+}
+
+.links {
+    text-align: right;
+}
+
+
+body {
+    margin: 0; /* Remove default margin to ensure full-width layout */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    background-color: #2a607c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Center align text */
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin to avoid space at the top */
+}
+
+.links {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center align items horizontally */
+}
+
+.links li {
+    margin: 0 10px; /* Add spacing between list items */
+}
+
+.links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h3 {
+    text-align: center; /* Center align text */
+    margin: 20px 0; /* Add space around the text */
 }
