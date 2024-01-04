@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Professional Portfolio</title>
-
+  <title>Developer's Portfolio</title>
+ 
 </head>
-
-
 <body>
-  <!--This is The header-->
-  <div class="header">
-    <h1>My Professional Portfolio</h1>
-    <h4> Dennis Angelov  </h4>
-    <div class="links">
-      <li>
-        <a href="#search-engine-optimization">About Me</a>
-      </li>
-      <li>
-        <a href="#online-reputation-management">Work</a>
-      </li>
-      <li>
-        <a href="#social-media-marketing">Contact me</a>
-      </li>
-      <li>
-        <a href="#social-media-marketing">Resume</a>
-      </li>
-    </div>
-  </div>
 
-  
-</div>
+  <header>
+    <h1>Developer's Portfolio</h1>
+    <img src="avatar.jpg" alt="Developer's Avatar" width="150" height="150">
+  </header>
 
-<h3> Hi my name is Dennis this is my introduction, I was born and raised in Illinois and just graduated from highschool in may of 2023.
-</h3>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <section id="about">
+    <h2>About Me</h2>
+    <!-- Add content about the developer -->
+  </section>
 
+  <section id="work">
+    <h2>My Work</h2>
+    <!-- Add titled images of the developer's applications -->
+    <img src="app1.jpg" alt="Application 1">
+    <img src="app2.jpg" alt="Application 2">
+    <img src="app3.jpg" alt="Application 3">
+    <!-- Add more images as needed -->
+  </section>
 
+  <!-- Add more sections as needed -->
 
+  <footer>
+    &copy; 2024 Developer's Name
+  </footer>
 
+  <script>
+    // Add JavaScript for smooth scrolling and other interactive features
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 
-
-
-
-
-  
 </body>
 </html>
