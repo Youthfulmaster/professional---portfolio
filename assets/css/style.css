@@ -1,92 +1,71 @@
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-    text-align: left;
-    margin-top: 50px; /* Adjust margin as needed */
-    
-}
-
-.links {
-    text-align: right;
-}
-
-
 body {
-    margin: 0; /* Remove default margin to ensure full-width layout */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.header {
-    background-color: #2a607c;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center; /* Center align text */
-}
-
-.header h1 {
-    margin: 0; /* Remove default margin to avoid space at the top */
-}
-
-.links {
-    list-style: none; /* Remove default list styles */
-    padding: 0;
-    display: flex; /* Use flexbox to align items */
-    justify-content: center; /* Center align items horizontally */
-}
-
-.links li {
-    margin: 0 10px; /* Add spacing between list items */
-}
-
-.links a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.h3 {
-    text-align: center; /* Center align text */
-    margin: 20px 0; /* Add space around the text */
-}
-
-.body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.header {
-  background-color: #333;
-  color: white;
+header {
   text-align: center;
   padding: 20px;
+  background-color: #f4f4f4;
 }
 
-.nav {
+header .avatar {
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+nav {
   display: flex;
-  justify-content: space-around;
-  background-color: #444;
-  padding: 10px;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 0;
 }
 
-.section {
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
   padding: 20px;
 }
 
-.section img {
+#work .applications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+#work .applications img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #ddd;
-  padding: 5px;
-  margin: 5px;
-  cursor: pointer;
+  transition: transform 0.3s;
 }
 
-.footer {
-  background-color: #333;
-  color: white;
+#work .applications .featured {
+  flex: 1 1 100%;
+}
+
+#work .applications img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+  #work .applications .featured {
+    flex: 1 1 50%;
+  }
+}
+
+footer {
   text-align: center;
   padding: 10px;
+  background-color: #333;
+  color: white;
 }

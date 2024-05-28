@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer's Portfolio</title>
- 
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
     <h1>Developer's Portfolio</h1>
-    <img src="avatar.jpg" alt="Developer's Avatar" width="150" height="150">
+    <img src="avatar.jpg" alt="Developer's Avatar" class="avatar">
   </header>
 
   <nav>
@@ -21,26 +21,36 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <!-- Add content about the developer -->
+    <p><!-- Add content about the developer --></p>
   </section>
 
   <section id="work">
     <h2>My Work</h2>
-    <!-- Add titled images of the developer's applications -->
-    <img src="app1.jpg" alt="Application 1">
-    <img src="app2.jpg" alt="Application 2">
-    <img src="app3.jpg" alt="Application 3">
-    <!-- Add more images as needed -->
+    <div class="applications">
+      <a href="http://deployedapplication1.com" target="_blank">
+        <img src="app1.jpg" alt="Application 1" class="featured">
+      </a>
+      <a href="http://deployedapplication2.com" target="_blank">
+        <img src="app2.jpg" alt="Application 2">
+      </a>
+      <a href="http://deployedapplication3.com" target="_blank">
+        <img src="app3.jpg" alt="Application 3">
+      </a>
+      <!-- Add more images as needed -->
+    </div>
   </section>
 
-  <!-- Add more sections as needed -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: developer@example.com</p>
+    <!-- Add more contact info as needed -->
+  </section>
 
   <footer>
     &copy; 2024 Developer's Name
   </footer>
 
   <script>
-    // Add JavaScript for smooth scrolling and other interactive features
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
