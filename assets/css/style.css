@@ -60,18 +60,27 @@ section {
   justify-content: center;
 }
 
-#work .applications img {
-  max-width: 100%;
+.work-item {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+  border: 2px solid #00cccc;
+}
+
+.work-item img {
+  width: 100%;
   height: auto;
-  transition: transform 0.3s;
+  display: block;
 }
 
-#work .applications .featured {
-  flex: 1 1 100%;
-}
-
-#work .applications img:hover {
-  transform: scale(1.05);
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
 @media (min-width: 600px) {
