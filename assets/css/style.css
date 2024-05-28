@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  text-align: center; /* Centering all text by default */
 }
 
 header {
@@ -16,24 +17,40 @@ header .avatar {
 }
 
 nav {
-  display: flex;
-  justify-content: center;
   background-color: #333;
-  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
   margin: 0 15px;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+  border-radius: 5px;
 }
 
 section {
   padding: 20px;
+  text-align: center; /* Centering text in sections */
 }
 
 #work .applications {
