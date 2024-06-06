@@ -2,18 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  text-align: center; /* Centering all text by default */
+  text-align: center;
 }
 
-header {
-  text-align: center;
+.header-content {
+  display: flex;
+  align-items: center;
   padding: 20px;
   background-color: #f4f4f4;
 }
 
-header .avatar {
-  max-width: 150px;
-  border-radius: 50%;
+.header-content .profile-image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 20px;
 }
 
 nav {
@@ -50,19 +52,20 @@ nav ul li a:hover {
 
 section {
   padding: 20px;
-  text-align: center; /* Centering text in sections */
+  text-align: center;
 }
 
 #work .applications {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .work-item {
   position: relative;
   width: 100%;
+  max-width: 600px;
   border: 2px solid #00cccc;
 }
 
