@@ -35,4 +35,4 @@ To run this project locally, follow these steps:
    This is the link to the deployed website https://youthfulmaster.github.io/professional---portfolio/
 
 
-- The `![Img of deployed website](assets/img/profollio.PNG)`
+-- `![Img of deployed website](assets/img/profollio.PNG)` 
