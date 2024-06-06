@@ -4,45 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Developer's Portfolio</title>
+  <!-- Link to the external stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
+  <!-- Header section containing the profile image and portfolio title -->
   <header>
     <div class="header-content">
+      <!-- Profile image -->
       <img src="assets/img/20240531_180032.jpg" alt="Profile Image" class="profile-image">
+      <!-- Portfolio title -->
       <h1>Developer's Portfolio</h1>
     </div>
   </header>
 
+  <!-- Navigation bar for easy access to different sections of the portfolio -->
   <nav>
     <ul>
+      <!-- Link to the About section -->
       <li><a href="#about">About</a></li>
+      <!-- Link to the Work section -->
       <li><a href="#work">Work</a></li>
+      <!-- Link to the Contact section -->
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- About Me section -->
   <section id="about">
     <h2>About Me</h2>
+    <!-- Brief introduction about yourself -->
     <p>My name is Dennis Angelov, I am a student in the UI/UX course...</p>
   </section>
 
+  <!-- My Work section showcasing your projects -->
   <section id="work">
     <h2>My Work</h2>
     <div class="applications">
+      <!-- First project with an image and overlay text -->
       <a href="https://github.com/Youthfulmaster/Weather-Dashboard" target="_blank" class="work-item">
         <img src="assets/img/weather dashboard.png" alt="Application 1">
         <div class="overlay">
           <div class="text">Weather-Dashboard</div>
         </div>
       </a>
+      <!-- Second project with an image and overlay text -->
       <a href="https://github.com/Youthfulmaster/inquirer-README-gen" target="_blank" class="work-item">
         <img src="assets/img/react-Portfolio.PNG" alt="Application 2">
         <div class="overlay">
           <div class="text">react-Portfolio</div>
         </div>
       </a>
+      <!-- Third project with an image and overlay text -->
       <a href="https://github.com/Youthfulmaster/note_taker" target="_blank" class="work-item">
         <img src="assets/img/noteTaker.PNG" alt="Application 3">
         <div class="overlay">
@@ -52,22 +66,27 @@
     </div>
   </section>
 
+  <!-- Contact Me section with contact information -->
   <section id="contact">
     <h2>Contact Me</h2>
+    <!-- Phone number (available upon request) -->
     <p>Phone number available upon request</p>
+    <!-- Email address -->
     <p><a href="mailto:Dennisangelov3@gmail.com">Dennisangelov3@gmail.com</a></p>
+    <!-- GitHub profile link -->
     <p><a href="https://github.com/Youthfulmaster">GitHub</a></p>
   </section>
 
+  <!-- Footer section -->
   <footer>
     &copy; 2024 Dennis Angelov
   </footer>
 
+  <!-- Smooth scrolling script for navigation links -->
   <script>
     document.querySelectorAll('nav a').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
         });
